@@ -4,7 +4,8 @@ This project revolves around the idea of a Basic reinvestment calculator. From t
 
                                   Wire Frame
 
- ![image](https://github.com/user-attachments/assets/140a93cd-6b92-4253-8bba-96c96fd9a19a)
+![image](https://github.com/user-attachments/assets/486e9c2f-2699-4c3f-ab45-b748b4f2d15f)
+
 
                                  User Stories
 
@@ -24,7 +25,9 @@ The use-cases should be formatted correctly and consistently.
 4.	Savings vs. Investment comparison.
 5.	Personal investment planning.
 
+
 Use-Case Diagram
 
- ![image](https://github.com/user-attachments/assets/9f9ef328-4f17-4357-8fad-3a4d4dd9dbbf)
+![image](https://github.com/user-attachments/assets/9c7d90e0-ccba-432b-bab6-f2327a0ad2e9)
+
 
