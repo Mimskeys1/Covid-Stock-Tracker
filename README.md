@@ -1,9 +1,13 @@
-Concept description
+                              Concept description
+
 This project revolves around the idea of a Basic reinvestment calculator. From that idea I would like to allow the user to have access to choose to decide which stock on the SPY that they would like to reinvest the money into. The calculator would then show how much capital was invested in, the money at the earned and the historic percentage gain. I would also like this to be shown on a line graph showing both figures.
-Wire Frame
+
+                                  Wire Frame
+
  ![image](https://github.com/user-attachments/assets/140a93cd-6b92-4253-8bba-96c96fd9a19a)
 
-User Stories
+                                 User Stories
+
 Create (at least 5) User Stories to describe how the application is intended to be used.
 The use-cases should be formatted correctly and consistently.
 1.	A user is interested in the difference between SPY as a whole vs googles stock.
@@ -12,7 +16,8 @@ The use-cases should be formatted correctly and consistently.
 4.	A user is interested in comparing google vs Nvidia over the pandemic. 
 5.	A user is interested in seeing if lump sum is better than investing overtime.
    
-Use-Cases
+                                   Use-Cases
+
 1.	Educational tool for new investors.
 2.	Comparing different stocks.
 3.	Tracking market trends over time.
@@ -20,5 +25,6 @@ Use-Cases
 5.	Personal investment planning.
 
 Use-Case Diagram
+
  ![image](https://github.com/user-attachments/assets/9f9ef328-4f17-4357-8fad-3a4d4dd9dbbf)
 
