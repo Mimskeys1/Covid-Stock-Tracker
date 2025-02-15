@@ -1,4 +1,18 @@
-<h1><p align="center">Concept description </p></h1>
+### Index
+
+[Concept description](#concept-description)
+
+[User Stories](#user-stories)
+
+[Use-Cases](#use-cases)
+
+[Use-Case Diagram](#use-case-diagram)
+
+[Table of requirements](#table-of-requirements)
+
+
+
+<h1><p align="center">Concept description</p></h1>
 
 This project revolves around the idea of a Basic reinvestment calculator. From that idea I would like to allow the user to have access to choose to decide which stock in the SPY that they would like to reinvest the money into. The calculator would then show how much capital was invested in, the money at the end of the timeline and the historic percentage gain. I would also like this to be shown on a line graph showing both figures.
 
@@ -31,7 +45,7 @@ The use-cases should be formatted correctly and consistently.
   
 ![image](https://github.com/user-attachments/assets/9c7d90e0-ccba-432b-bab6-f2327a0ad2e9)
 
-<h1><p align="center">Table of requirements</p></h1>
+<h1><p align="center">Table of Requirements</p></h1>
 
 Number | Requirement | Testable |
 --- | --- |  --- |
