@@ -60,6 +60,7 @@ Number | Requirement | Testable |
 5 | The software shall generate and display a line graph showing both total invested capital and final investment value over time. |  Yes |
 
 <h1><p align="center">Entity Relationship Diagram</p></h1>
-![chen_notation_erd](https://github.com/user-attachments/assets/cc55db2d-bf18-4921-aceb-70bbdede8d8a)
+![Drawing 1](https://github.com/user-attachments/assets/f7f9d826-2032-4b55-8a1f-737b5c43af4a)
+
 
 <h1><p align="center"></p>UML Class Diagram</h1>
