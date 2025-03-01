@@ -10,6 +10,10 @@
 
 [Table of requirements](#table-of-requirements)
 
+[Entity Relationship Diagram](#table-of-requirements)
+
+[UML Class Diagram](#table-of-requirements)
+
 
 
 <h1><p align="center">Concept description</p></h1>
@@ -55,3 +59,7 @@ Number | Requirement | Testable |
 4 | The software shall calculate and display the total capital invested over the selected investment timeline. |  Yes |
 5 | The software shall generate and display a line graph showing both total invested capital and final investment value over time. |  Yes |
 
+<h1><p align="center">Entity Relationship Diagram</p></h1>
+![chen_notation_erd](https://github.com/user-attachments/assets/cc55db2d-bf18-4921-aceb-70bbdede8d8a)
+
+<h1><p align="center"></p>UML Class Diagram</h1>
