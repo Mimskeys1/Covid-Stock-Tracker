@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Reinvestment Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Basic Reinvestment Calculator</h1>
+        <form id="calculator-form">
+            <label for="stock">Select Stock:</label>
+            <select id="stock" required>
+                <option value="AAPL">Apple (AAPL)</option>
+                <option value="MSFT">Microsoft (MSFT)</option>
+                <option value="GOOGL">Google (GOOGL)</option>
+                <option value="AMZN">Amazon (AMZN)</option>
+                <option value="TSLA">Tesla (TSLA)</option>
+            </select>
+
+            <label for="initial">Initial Investment ($):</label>
+            <input type="number" id="initial" required>
+
+            <label for="contribution">Weekly Contribution ($):</label>
+            <input type="number" id="contribution" required>
+
+            <label for="years">Investment Timeline (Years):</label>
+            <input type="number" id="years" required>
+
+            <button type="button" id="calculate-btn">Calculate</button>
+        </form>
+
+        <div id="results" class="hidden">
+            <h2>Results</h2>
+            <p id="summary"></p>
+            <canvas id="investmentChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+    <div id="comparisonMessage"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
