@@ -71,3 +71,9 @@ Number | Requirement | Testable |
 
 
 <h1><p align="center"></p>Data Access Layer</h1>
+
+![image](https://github.com/user-attachments/assets/bbd34140-1a1b-4e79-8fd5-353ae1af8377)
+
+![image](https://github.com/user-attachments/assets/f33c3e2f-8a0f-4f87-b7d2-38ae81696b5c)
+
+![image](https://github.com/user-attachments/assets/d439ccd3-2ae2-435b-b3b7-19e130996b5f)
