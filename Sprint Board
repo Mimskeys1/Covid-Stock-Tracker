@@ -1,0 +1,42 @@
+
+
+In Progress  – Sprint 1
+
+
+| Issue # | Task |
+|---------|------|
+| #1 | Implement API for real-time stocks |
+| #2 | Show all 100 stocks in S&P |
+| #3 | Redo the calculation so it calculates correctly | 
+| #4 | Update calculation function to reinvest by selection interval | 
+| #5 | Implement a Save feature on searches | 
+| #6 | Recolor webpage To be more engaging |
+
+
+---
+Planned
+
+These issues are planned for Sprint 2 and have not yet started.
+
+| Issue # | Task |
+|---------|------|
+| #7 | Implement a date selector |
+| #8 | Recolor the graph to more clear colors |
+| #9 | Show 3 lines on the graph: amount invested, S&P historical, and current selected stock |
+| #10 | Reimplement text that shows if you had beaten the market |
+| #11 | Scrub Sample Data out of app |
+| #12 | Rework URL so Name is shown |
+---
+
+Completed Issues
+
+
+| Issue # | Task |
+|---------|------|-----------|
+| #13 | Implement Graph | 4h |
+| #14 | Have JavaScript that makes calculation |
+| #15 | Create drop-down menu for stocks |
+
+---
+
+
