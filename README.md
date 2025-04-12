@@ -77,3 +77,31 @@ Number | Requirement | Testable |
 ![image](https://github.com/user-attachments/assets/f33c3e2f-8a0f-4f87-b7d2-38ae81696b5c)
 
 ![image](https://github.com/user-attachments/assets/d439ccd3-2ae2-435b-b3b7-19e130996b5f)
+
+
+<h1><p align="center"></p>Week One Burndown chart</h1>
+import matplotlib.pyplot as plt
+
+# Sprint 1 setup
+days = list(range(8))  # Day 0 to Day 7
+total_estimated_hours = 19
+
+# Ideal burndown (linear)
+ideal_remaining = [total_estimated_hours - (total_estimated_hours / 7) * day for day in days]
+
+# Actual progress (mock data)
+actual_remaining = [19, 18, 15, 13, 10, 7, 3, 0]
+
+# Plotting the burndown chart
+plt.figure(figsize=(10, 6))
+plt.plot(days, ideal_remaining, label='Ideal Burndown', linestyle='--', marker='o', color='blue')
+plt.plot(days, actual_remaining, label='Actual Burndown', linestyle='-', marker='s', color='green')
+plt.title('Sprint 1 Burndown Chart (Week 1)')
+plt.xlabel('Day of Sprint')
+plt.ylabel('Remaining Work (Hours)')
+plt.xticks(days)
+plt.yticks(range(0, total_estimated_hours + 1, 2))
+plt.grid(True)
+plt.legend()
+plt.tight_layout()
+plt.show()
