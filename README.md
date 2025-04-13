@@ -83,4 +83,16 @@ Number | Requirement | Testable |
 
 ![image](https://github.com/user-attachments/assets/e368ffe8-0540-4198-ab67-36868a8852a8)
 
+Sprint Review Review
+Did you complete all the items in your sprint plan?
+No, I have decided to not go further with one of the branches we were contemplating to follow as I have decided that it was to far out of scope.  
+
+What is your sprint deliverable? (shippable product(s))
+The sprint deliverables were the search bar for stocks and the API implemented.
+
+Did you have any task volatility, and what was the cause?
+Yes, both with the task we decided against and the API taking longer than expected to implement.  
+
+What would you do differently knowing what you know now?
+I would have narrowed down the scope of the sprint of unnecessary items before the sprint started.
 
