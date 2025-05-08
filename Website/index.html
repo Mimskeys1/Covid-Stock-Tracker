@@ -12,14 +12,7 @@
     <div class="container">
         <h1>Basic Reinvestment Calculator</h1>
         <form id="calculator-form">
-            <label for="stock">Select Stock:</label>
-            <select id="stock" required>
-                <option value="AAPL">Apple (AAPL)</option>
-                <option value="MSFT">Microsoft (MSFT)</option>
-                <option value="GOOGL">Google (GOOGL)</option>
-                <option value="AMZN">Amazon (AMZN)</option>
-                <option value="TSLA">Tesla (TSLA)</option>
-            </select>
+            
 
             <label for="initial">Initial Investment ($):</label>
             <input type="number" id="initial" required>
@@ -30,6 +23,9 @@
             <label for="years">Investment Timeline (Years):</label>
             <input type="number" id="years" required>
 
+            <label for="returns">Rate Of Return:(%)</label>
+            <input type="number" id="returns" required>
+              
             <button type="button" id="calculate-btn">Calculate</button>
         </form>
 

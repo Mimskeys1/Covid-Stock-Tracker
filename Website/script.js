@@ -1,29 +1,21 @@
-//Fake Data for Temp Stocks
 
-const mockData = {
-    "AAPL": 0.12,
-    "MSFT": 0.17,
-    "GOOGL": 0.14,
-    "AMZN": 0.17,
-    "TSLA": 0.02
-};
 
 let investmentChart = null;
 
 document.getElementById('calculate-btn').addEventListener('click', () => {
-    const stock = document.getElementById('stock').value;
+    const returns = (document.getElementById('returns').value * .01);
     const initial = parseFloat(document.getElementById('initial').value);
     const contribution = parseFloat(document.getElementById('contribution').value);
     const years = parseInt(document.getElementById('years').value);
 
-    if (isNaN(initial) || isNaN(contribution) || isNaN(years) || initial <= 0 || years <= 0) {
+    if (isNaN(initial) || isNaN(contribution) || isNaN(years) ||isNaN(returns) || initial <= 0 || years <= 0) {
         alert('Please enter valid positive numbers.');
         return;
     }
 
-    const annualReturn = mockData[stock];
+    const annualReturn = returns;
     const results = calculateReinvestment(initial, contribution, annualReturn, years);
-    displayResults(results, initial, contribution, stock, annualReturn, years);
+    displayResults(results, initial, contribution, annualReturn, years);
 });
 
 function calculateReinvestment(initial, contribution, annualReturn, years) {
@@ -43,7 +35,7 @@ function calculateReinvestment(initial, contribution, annualReturn, years) {
 
     return { totalInvested, finalAmount: balance, values };
 }
-function displayResults(results, initial, contribution, stock, annualReturn, years) {
+function displayResults(results, initial, contribution, annualReturn, years) {
     const resultsSection = document.getElementById('results');
     const summary = document.getElementById('summary');
     const percentageGain = ((results.finalAmount - results.totalInvested) / results.totalInvested) * 100;
@@ -59,7 +51,7 @@ function displayResults(results, initial, contribution, stock, annualReturn, yea
 
     // Result Message
     summary.innerHTML = `
-        Investing in <strong>${stock}</strong> with an initial investment of <strong>$${initial}</strong>, adding <strong>$${contribution}</strong> per week over <strong>${years} years</strong>,
+        Investing with an initial investment of <strong>$${initial}</strong>, adding <strong>$${contribution}</strong> per week over <strong>${years} years</strong>,
         with an annual return of <strong>${(annualReturn * 100).toFixed(2)}%</strong> results in:
         <br><br>
         Total Capital Invested: <strong>$${results.totalInvested.toFixed(2)}</strong><br>
@@ -72,7 +64,7 @@ function displayResults(results, initial, contribution, stock, annualReturn, yea
     resultsSection.classList.remove('hidden');
     renderChart(results.values, years, contribution, annualReturn);
 }
-// Temp 10 percent for S&P Results
+// 
 function calculateSP500Balance(initialInvestment, weeklyContribution, years) {
     let balance = initialInvestment;
     let totalInvested = initialInvestment;
@@ -82,7 +74,7 @@ function calculateSP500Balance(initialInvestment, weeklyContribution, years) {
             balance += weeklyContribution;
             totalInvested += weeklyContribution;
             
-            balance += (balance * 0.10 / 52);  
+            balance += (balance * 0.08 / 52);  
         }
     }
 
@@ -105,25 +97,16 @@ function renderChart(data, years, contribution, annualReturn) {
         let sp500Balance = sp500AverageData[year - 1]; 
         for (let week = 1; week <= 52; week++) {
             sp500Balance += contribution;  
-            sp500Balance += (sp500Balance * (0.10 / 52)); 
+            sp500Balance += (sp500Balance * (0.08 / 52)); 
         }
         sp500AverageData.push(parseFloat(sp500Balance.toFixed(2)));
     }
-    function compareToSP500(userFinalAmount, sp500FinalBalance) {
-    const comparisonMessage = document.getElementById('comparisonMessage');
-    if (userFinalAmount > sp500FinalBalance) {
-        comparisonMessage.innerHTML = `<strong>Congratulations!</strong> Your investment has outperformed the S&P 500.`;
-    } else if (userFinalAmount < sp500FinalBalance) {
-        comparisonMessage.innerHTML = `<strong>Unfortunately,</strong> your investment has underperformed the S&P 500.`;
-    } else {
-        comparisonMessage.innerHTML = `<strong>It's a tie!</strong> Your investment has performed the same as the S&P 500.`;
-    }
-}
+  
 console.log("User's final balance: " + data);
 console.log("S&P 500 final balance: " + sp500AverageData);
 
 
-    // Create the new chart with both datasets
+    // Chart
     investmentChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -138,7 +121,7 @@ console.log("S&P 500 final balance: " + sp500AverageData);
                     tension: 0.1
                 },
                 {
-                    label: 'S&P 500 Historic Avg (10%/yr)',
+                    label: 'S&P 500 Historic Avg (8%/yr)',
                     data: sp500AverageData,
                     borderColor: '#ff5733',
                     borderDash: [5, 5],
